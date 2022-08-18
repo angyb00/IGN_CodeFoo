@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41849F5428AEB8A700CD9D4B /* articlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41849F5328AEB8A700CD9D4B /* articlesView.swift */; };
 		41C8A75E28AAD60D001AA314 /* IGN_CodeFooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8A75D28AAD60D001AA314 /* IGN_CodeFooApp.swift */; };
-		41C8A76028AAD60D001AA314 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8A75F28AAD60D001AA314 /* ContentView.swift */; };
+		41C8A76028AAD60D001AA314 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8A75F28AAD60D001AA314 /* homeView.swift */; };
 		41C8A76228AAD613001AA314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C8A76128AAD613001AA314 /* Assets.xcassets */; };
 		41C8A76528AAD613001AA314 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C8A76428AAD613001AA314 /* Preview Assets.xcassets */; };
+		41C8A76C28AC8417001AA314 /* videosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8A76B28AC8416001AA314 /* videosView.swift */; };
+		41C8A76E28ADA7A7001AA314 /* videoNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8A76D28ADA7A7001AA314 /* videoNetworkCall.swift */; };
+		41C8A77228AE9721001AA314 /* articlesNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8A77128AE9721001AA314 /* articlesNetworkCall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		41C8A75A28AAD60D001AA314 /* IGN_CodeFoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGN_CodeFoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41849F5328AEB8A700CD9D4B /* articlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = articlesView.swift; sourceTree = "<group>"; };
+		41C8A75A28AAD60D001AA314 /* IGN_News_Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGN_News_Feed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C8A75D28AAD60D001AA314 /* IGN_CodeFooApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGN_CodeFooApp.swift; sourceTree = "<group>"; };
-		41C8A75F28AAD60D001AA314 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		41C8A75F28AAD60D001AA314 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
 		41C8A76128AAD613001AA314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41C8A76428AAD613001AA314 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41C8A76B28AC8416001AA314 /* videosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videosView.swift; sourceTree = "<group>"; };
+		41C8A76D28ADA7A7001AA314 /* videoNetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoNetworkCall.swift; sourceTree = "<group>"; };
+		41C8A77128AE9721001AA314 /* articlesNetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = articlesNetworkCall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,10 +40,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41849F5528AEE0F700CD9D4B /* viewModels  */ = {
+			isa = PBXGroup;
+			children = (
+				41C8A76D28ADA7A7001AA314 /* videoNetworkCall.swift */,
+				41C8A77128AE9721001AA314 /* articlesNetworkCall.swift */,
+			);
+			path = "viewModels ";
+			sourceTree = "<group>";
+		};
+		41849F5628AEE12600CD9D4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41C8A75F28AAD60D001AA314 /* homeView.swift */,
+				41C8A76B28AC8416001AA314 /* videosView.swift */,
+				41849F5328AEB8A700CD9D4B /* articlesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		41C8A75128AAD60D001AA314 = {
 			isa = PBXGroup;
 			children = (
-				41C8A75C28AAD60D001AA314 /* IGN_CodeFoo */,
+				41C8A75C28AAD60D001AA314 /* IGN_News_Feed */,
 				41C8A75B28AAD60D001AA314 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +70,21 @@
 		41C8A75B28AAD60D001AA314 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41C8A75A28AAD60D001AA314 /* IGN_CodeFoo.app */,
+				41C8A75A28AAD60D001AA314 /* IGN_News_Feed.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		41C8A75C28AAD60D001AA314 /* IGN_CodeFoo */ = {
+		41C8A75C28AAD60D001AA314 /* IGN_News_Feed */ = {
 			isa = PBXGroup;
 			children = (
 				41C8A75D28AAD60D001AA314 /* IGN_CodeFooApp.swift */,
-				41C8A75F28AAD60D001AA314 /* ContentView.swift */,
+				41849F5628AEE12600CD9D4B /* Views */,
+				41849F5528AEE0F700CD9D4B /* viewModels  */,
 				41C8A76128AAD613001AA314 /* Assets.xcassets */,
 				41C8A76328AAD613001AA314 /* Preview Content */,
 			);
-			path = IGN_CodeFoo;
+			path = IGN_News_Feed;
 			sourceTree = "<group>";
 		};
 		41C8A76328AAD613001AA314 /* Preview Content */ = {
@@ -70,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		41C8A75928AAD60D001AA314 /* IGN_CodeFoo */ = {
+		41C8A75928AAD60D001AA314 /* IGN_News_Feed */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41C8A76828AAD613001AA314 /* Build configuration list for PBXNativeTarget "IGN_CodeFoo" */;
+			buildConfigurationList = 41C8A76828AAD613001AA314 /* Build configuration list for PBXNativeTarget "IGN_News_Feed" */;
 			buildPhases = (
 				41C8A75628AAD60D001AA314 /* Sources */,
 				41C8A75728AAD60D001AA314 /* Frameworks */,
@@ -82,9 +110,9 @@
 			);
 			dependencies = (
 			);
-			name = IGN_CodeFoo;
+			name = IGN_News_Feed;
 			productName = IGN_CodeFoo;
-			productReference = 41C8A75A28AAD60D001AA314 /* IGN_CodeFoo.app */;
+			productReference = 41C8A75A28AAD60D001AA314 /* IGN_News_Feed.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 41C8A75528AAD60D001AA314 /* Build configuration list for PBXProject "IGN_CodeFoo" */;
+			buildConfigurationList = 41C8A75528AAD60D001AA314 /* Build configuration list for PBXProject "IGN_News_Feed" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41C8A75928AAD60D001AA314 /* IGN_CodeFoo */,
+				41C8A75928AAD60D001AA314 /* IGN_News_Feed */,
 			);
 		};
 /* End PBXProject section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41C8A76028AAD60D001AA314 /* ContentView.swift in Sources */,
+				41849F5428AEB8A700CD9D4B /* articlesView.swift in Sources */,
+				41C8A76C28AC8417001AA314 /* videosView.swift in Sources */,
+				41C8A76028AAD60D001AA314 /* homeView.swift in Sources */,
+				41C8A77228AE9721001AA314 /* articlesNetworkCall.swift in Sources */,
+				41C8A76E28ADA7A7001AA314 /* videoNetworkCall.swift in Sources */,
 				41C8A75E28AAD60D001AA314 /* IGN_CodeFooApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +298,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"IGN_CodeFoo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"IGN_News_Feed/Preview Content\"";
 				DEVELOPMENT_TEAM = 5UFQ6S5239;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -281,7 +313,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "angy.IGN-CodeFoo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = IGN_News_Feed;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"IGN_CodeFoo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"IGN_News_Feed/Preview Content\"";
 				DEVELOPMENT_TEAM = 5UFQ6S5239;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -310,7 +342,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "angy.IGN-CodeFoo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = IGN_News_Feed;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41C8A75528AAD60D001AA314 /* Build configuration list for PBXProject "IGN_CodeFoo" */ = {
+		41C8A75528AAD60D001AA314 /* Build configuration list for PBXProject "IGN_News_Feed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41C8A76628AAD613001AA314 /* Debug */,
@@ -329,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41C8A76828AAD613001AA314 /* Build configuration list for PBXNativeTarget "IGN_CodeFoo" */ = {
+		41C8A76828AAD613001AA314 /* Build configuration list for PBXNativeTarget "IGN_News_Feed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41C8A76928AAD613001AA314 /* Debug */,
