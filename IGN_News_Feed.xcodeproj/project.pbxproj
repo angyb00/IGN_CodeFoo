@@ -22,6 +22,7 @@
 /* Begin PBXFileReference section */
 		416248A128AEE7D1000B1101 /* Logos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logos.swift; sourceTree = "<group>"; };
 		416248E428B2EC5A000B1101 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		416248E628B2FAA9000B1101 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		41849F5328AEB8A700CD9D4B /* articlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = articlesView.swift; sourceTree = "<group>"; };
 		41C8A75A28AAD60D001AA314 /* IGN_News_Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGN_News_Feed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C8A75D28AAD60D001AA314 /* IGN_CodeFooApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGN_CodeFooApp.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		41C8A75128AAD60D001AA314 = {
 			isa = PBXGroup;
 			children = (
+				416248E628B2FAA9000B1101 /* README.md */,
 				41C8A75C28AAD60D001AA314 /* IGN_News_Feed */,
 				41C8A75B28AAD60D001AA314 /* Products */,
 			);
