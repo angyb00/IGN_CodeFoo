@@ -39,14 +39,14 @@ struct video: Codable, Hashable {
 }
 
 struct videoThumbnail: Codable, Hashable {
-    var url: String
+    var url: String?
     var size: String?
     var height: Int?
     var width: Int?
 }
 
 struct videoMetadata: Codable, Hashable {
-    var title: String?
+    var title: String
     var description: String?
     var publishDate: String
 }

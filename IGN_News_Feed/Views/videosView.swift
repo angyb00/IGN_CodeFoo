@@ -10,8 +10,6 @@ struct videoThumbnailView: View {
             Image(uiImage: uiimage)
                 .resizable()
                 .frame(width: 340, height: 190)
-                
-                
         }
         else {
             Image(systemName: "video")
@@ -33,42 +31,49 @@ struct videoThumbnailView: View {
 
 struct videosView: View {
     @StateObject var videos = getVideos()
+    @State var showWebView = false
     var body: some View {
         ScrollView {
-                ForEach(videos.video.data, id: \.self) { video in
-                    VStack {
-                        if videos.video.data.count > 0 {
-                            if let title = video.metadata.title {
-                                videoThumbnailView(url: video.thumbnails[0].url)
-                                Text(title)
-                                    .bold()
-                                    .font(.body)
-                                    .padding(.top)
-
+            ForEach(videos.video.data, id: \.self) { video in
+                VStack {
+                    if videos.video.data.count > 0 {
+                        if let thumbnailUrl = video.thumbnails[0].url {
+                            Button {
+                                showWebView.toggle()
+                            } label: {
+                                VStack {
+                                    videoThumbnailView(url: thumbnailUrl)
+                                    Text(video.metadata.title)
+                                        .bold()
+                                        .font(.body)
+                                        .padding(.top)
+                                }
+                            }.sheet(isPresented: $showWebView) {
+                                WebView(url: URL(string: video.assets[0].url)!)
                             }
                         }
                         else {
-                            Text("View is still loading")
+                            Button {
+                                showWebView.toggle()
+                            } label: {
+                                VStack {
+                                    Text("No thumbnail")
+                                    Text(video.metadata.title)
+                                        .bold()
+                                        .font(.body)
+                                        .padding(.top)
+                                }
+                            }.sheet(isPresented: $showWebView) {
+                                WebView(url: URL(string: video.assets[0].url)!)
+                            }
                         }
-                    }.padding()
+                    }
+                }.padding()
                     .overlay(RoundedRectangle(cornerRadius: 7).stroke(.gray, lineWidth: 0.5))
-                }
+            }
         }.onAppear {
             videos.getData()
         }
-    }
-}
-
-
-struct articlesLogo: View {
-    var body: some View {
-        Image(systemName: "chart.bar.doc.horizontal")
-            .font(.largeTitle)
-            .padding(.leading)
-        Text("ARTICLES")
-            .font(.title)
-            .bold()
-            .padding(.trailing)
     }
 }
 

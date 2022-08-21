@@ -11,7 +11,7 @@ struct homeView: View {
                 .background(Color("darkRed"))
             VStack {
                 HStack {
-                    articlesLogo().brightness(showArticles ? 0 : 0.7).onTapGesture {
+                    articlesToggle().brightness(showArticles ? 0 : 0.7).onTapGesture {
                         showArticles = true
                         showVideos = false
                     }
@@ -33,18 +33,6 @@ struct homeView: View {
                 Spacer()
             }
         }
-    }
-}
-
-struct videosToggle: View {
-    var body: some View {
-        Image(systemName: "play")
-            .font(.largeTitle)
-            .padding(.leading)
-        Text("VIDEOS")
-            .font(.title)
-            .bold()
-            .padding(.trailing)
     }
 }
 

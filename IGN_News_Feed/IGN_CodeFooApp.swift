@@ -4,7 +4,7 @@ import SwiftUI
 struct IGN_New_Feed_App: App {
     var body: some Scene {
         WindowGroup {
-            homeView()
+            videosView()
         }
     }
 }

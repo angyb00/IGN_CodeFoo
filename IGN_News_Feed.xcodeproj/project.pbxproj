@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		416248A228AEE7D1000B1101 /* Logos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416248A128AEE7D1000B1101 /* Logos.swift */; };
+		416248E528B2EC5A000B1101 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416248E428B2EC5A000B1101 /* WebView.swift */; };
 		41849F5428AEB8A700CD9D4B /* articlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41849F5328AEB8A700CD9D4B /* articlesView.swift */; };
 		41C8A75E28AAD60D001AA314 /* IGN_CodeFooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8A75D28AAD60D001AA314 /* IGN_CodeFooApp.swift */; };
 		41C8A76028AAD60D001AA314 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8A75F28AAD60D001AA314 /* homeView.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		416248A128AEE7D1000B1101 /* Logos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logos.swift; sourceTree = "<group>"; };
+		416248E428B2EC5A000B1101 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		41849F5328AEB8A700CD9D4B /* articlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = articlesView.swift; sourceTree = "<group>"; };
 		41C8A75A28AAD60D001AA314 /* IGN_News_Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGN_News_Feed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C8A75D28AAD60D001AA314 /* IGN_CodeFooApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGN_CodeFooApp.swift; sourceTree = "<group>"; };
@@ -45,6 +49,7 @@
 			children = (
 				41C8A76D28ADA7A7001AA314 /* videoNetworkCall.swift */,
 				41C8A77128AE9721001AA314 /* articlesNetworkCall.swift */,
+				416248E428B2EC5A000B1101 /* WebView.swift */,
 			);
 			path = "viewModels ";
 			sourceTree = "<group>";
@@ -54,6 +59,7 @@
 			children = (
 				41C8A75F28AAD60D001AA314 /* homeView.swift */,
 				41C8A76B28AC8416001AA314 /* videosView.swift */,
+				416248A128AEE7D1000B1101 /* Logos.swift */,
 				41849F5328AEB8A700CD9D4B /* articlesView.swift */,
 			);
 			path = Views;
@@ -165,12 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				416248E528B2EC5A000B1101 /* WebView.swift in Sources */,
 				41849F5428AEB8A700CD9D4B /* articlesView.swift in Sources */,
 				41C8A76C28AC8417001AA314 /* videosView.swift in Sources */,
 				41C8A76028AAD60D001AA314 /* homeView.swift in Sources */,
 				41C8A77228AE9721001AA314 /* articlesNetworkCall.swift in Sources */,
 				41C8A76E28ADA7A7001AA314 /* videoNetworkCall.swift in Sources */,
 				41C8A75E28AAD60D001AA314 /* IGN_CodeFooApp.swift in Sources */,
+				416248A228AEE7D1000B1101 /* Logos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
