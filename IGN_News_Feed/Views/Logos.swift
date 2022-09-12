@@ -8,7 +8,6 @@ struct articlesToggle: View {
         Text("ARTICLES")
             .font(.title)
             .bold()
-            .padding(.trailing)
     }
 }
 
@@ -23,8 +22,6 @@ struct videosToggle: View {
             .padding(.trailing)
     }
 }
-
-
 
 struct Logos_Previews: PreviewProvider {
     static var previews: some View {
